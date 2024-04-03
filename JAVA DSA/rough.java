@@ -1,36 +1,13 @@
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
-
-public class Solution {
-
+class rough{
     public static void main(String[] args) {
-        Scanner scn = new Scanner(System.in);
-        int n = scn.nextInt();
-        int[]arr = new int[n];
-        
-        for(int i=0;i<n;i++){
-            arr[i] = scn.nextInt();
-        }
-        
-        System.out.println(dominantIndex(arr));
+        int a = 45;
+        float b = 56.7f;
+
+        System.out.println(addy(a, b));
     }
-    
-     public static int dominantIndex(int[] arr) {
-        int max = Integer.MIN_VALUE;
-        int index = -1;
-        int second = -1;
-         
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > max) {
-                second = max;
-                max = arr[i];
-                index = i;
-            } else if (arr[i] > second)
-                second = arr[i];
-        }
-        return second * 2 <= max ? index : -1;
+
+    public static float addy(int x, float y){
+        float additon = x+y;
+        return additon;
     }
 }
