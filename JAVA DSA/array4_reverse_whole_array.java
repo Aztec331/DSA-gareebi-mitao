@@ -25,7 +25,7 @@ public class array4_reverse_whole_array{
             arr[i]=scan.nextInt();
         }
 
-        reverse(arr);
+        reverse(arr); //array ke saath bhalatkar kar fir array print kar
 
         System.out.println();
 
