@@ -7,6 +7,7 @@ import java.util.regex.*;
 public class rough {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+
         
     }
 }
