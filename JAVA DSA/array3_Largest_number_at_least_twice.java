@@ -1,13 +1,3 @@
-// Logic:
-// 1.	We must find the greatest and the second greatest element in the array.
-// 2.	Every other element in the array will be smaller than the second greatest element.
-// 3.	secondmax is the second largest element in the array.
-// 4.	Check if secondmax * 2 <= max. If yes, then return the index of max. Otherwise, return -1.
-// Tip:
-// 1.	Handle the edge case where secondmax is the last number in the array and max is the second last. 
-//      In this case, the for loop will not run on the last element to check for secondmax, so check this using another for loop on the array with 'else if(arr[i]>secondmax){secondmax = arr[i]}
-// 2.	Keep secondmax at the top in the for loop of checking the maximum element. This is because we copy max into secondmax first and then copy the maximum element into max.
-
 import java.io.*;
 import java.util.*;
 import java.text.*;
@@ -58,4 +48,12 @@ public class array3_Largest_number_at_least_twice {
 
 }
 
-
+// Logic:
+// 1.	We must find the greatest and the second greatest element in the array.
+// 2.	Every other element in the array will be smaller than the second greatest element.
+// 3.	secondmax is the second largest element in the array.
+// 4.	Check if secondmax * 2 <= max. If yes, then return the index of max. Otherwise, return -1.
+// Tip:
+// 1.	Handle the edge case where secondmax is the last number in the array and max is the second last. 
+//      In this case, the for loop will not run on the last element to check for secondmax, so check this using another for loop on the array with 'else if(arr[i]>secondmax){secondmax = arr[i]}
+// 2.	Keep secondmax at the top in the for loop of checking the maximum element. This is because we copy max into secondmax first and then copy the maximum element into max.
