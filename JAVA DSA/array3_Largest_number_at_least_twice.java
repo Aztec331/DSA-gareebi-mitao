@@ -57,3 +57,4 @@ public class array3_Largest_number_at_least_twice {
 // 1.	Handle the edge case where secondmax is the last number in the array and max is the second last. 
 //      In this case, the for loop will not run on the last element to check for secondmax, so check this using another for loop on the array with 'else if(arr[i]>secondmax){secondmax = arr[i]}
 // 2.	Keep secondmax at the top in the for loop of checking the maximum element. This is because we copy max into secondmax first and then copy the maximum element into max.
+
