@@ -25,9 +25,21 @@ public class rough {
     } 
 
 
-    public static void largest_atleast_twice(int arr[]){
+    public static int largest_atleast_twice(int arr[]){
 
-        
+        int max = Integer.MIN_VALUE;
+        int secondmax = Integer.MAX_VALUE;
+        int index = -1;
+
+        for(int i=0; i<arr.length; i++){
+            if(arr[i]>max){
+                secondmax=max;
+                max= arr[i];
+                index= max;
+            }
+
+        }
+
     }
     
 }
