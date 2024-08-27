@@ -10,20 +10,24 @@ public class rough {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
+        System.out.print("Enter length for array:");
         int n = scan.nextInt();
 
         int arr[] = new int[n];
 
         for(int i=0; i<n; i++){
+            System.out.print("Enter array elements:");
             arr[i]= scan.nextInt();
         }
 
-        //a variable to store sum
-        int sum=0;
-        for(int i=0; i<n; i++){
-            sum+=arr[i]
-        }
 
+
+    } 
+
+
+    public static void largest_atleast_twice(int arr[]){
+
+        
     }
     
 }
