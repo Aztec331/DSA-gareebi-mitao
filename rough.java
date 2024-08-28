@@ -4,8 +4,6 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-import javax.sound.sampled.SourceDataLine;
-
 public class rough {
     public static void main(String[] args) {
 
@@ -22,6 +20,7 @@ public class rough {
 
         System.out.println(largest_atleast_twice(arr));
 
+        scan.close();
 
     } 
 
@@ -56,7 +55,7 @@ public class rough {
         else{
             return -1;
         }
-
+        
 
     }
     
