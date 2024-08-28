@@ -6,57 +6,53 @@ import java.util.regex.*;
 
 public class rough {
     public static void main(String[] args) {
+        //Reverse part of array
 
         Scanner scan = new Scanner(System.in);
-        System.out.print("Enter length for array:");
+        System.out.print("Enter size of array:");
         int n = scan.nextInt();
 
-        int arr[] = new int[n];
+        int arr[]= new int[n];
 
         for(int i=0; i<n; i++){
             System.out.print("Enter array elements:");
             arr[i]= scan.nextInt();
         }
 
-        System.out.println(largest_atleast_twice(arr));
+        System.out.print("Enter index1:");
+        int x= scan.nextInt();
+        System.out.print("Enter index1:");
+        int y= scan.nextInt();
+        
+
+        reversepartofarray(arr, x, y);
+
+        for(int i=0; i<n; i++){
+            System.out.print(arr[i]+ " ");
+        }
 
         scan.close();
 
-    } 
+    }
 
+    public static void reversepartofarray(int arr[], int x, int y){
 
-    public static int largest_atleast_twice(int arr[]){
+        int sp = x;
+        int ep = y;
 
-        int max = Integer.MIN_VALUE;
-        int secondmax = Integer.MIN_VALUE;
-        int maxindex = -1;
+        while(sp<ep){
+            int temp = arr[sp];
+            arr[sp]= arr[ep];
+            arr[ep]= temp;
 
-        for(int i=0; i<arr.length; i++){
-            if(arr[i]>max){
-                secondmax=max;
-                max= arr[i];
-                maxindex= i;// silly mistake
-            }
+            sp++;
+            ep--;
+
         }
-
-        //we've already defined secondmax above
-        //hence we're checking if we have any element
-        //after the maximum which has possibilty to be 
-        //secondmax
-        for(int i=0; i<arr.length; i++){
-            if(arr[i]>secondmax){
-                secondmax=arr[i];
-            }
-        }
-
-        if(secondmax*2<=max){
-            return maxindex;
-        }
-        else{
-            return -1;
-        }
-        
 
     }
+
     
+
+
 }

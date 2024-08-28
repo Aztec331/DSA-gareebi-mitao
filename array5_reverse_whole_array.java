@@ -28,8 +28,8 @@ public class array5_reverse_whole_array{
 
     public static void reverse(int arr[]){
         
-        int sp=0;
-        int ep=arr.length-1;
+        int sp=0; //this represents first element
+        int ep=arr.length-1; // arr.length-1 represents last element
 
         while(sp<ep){
             int temp= arr[sp];
