@@ -23,9 +23,6 @@ public class rough {
         int x= scan.nextInt();
         System.out.print("Enter index1:");
         int y= scan.nextInt();
-        
-
-        reversepartofarray(arr, x, y);
 
         for(int i=0; i<n; i++){
             System.out.print(arr[i]+ " ");
@@ -35,22 +32,7 @@ public class rough {
 
     }
 
-    public static void reversepartofarray(int arr[], int x, int y){
 
-        int sp = x;
-        int ep = y;
-
-        while(sp<ep){
-            int temp = arr[sp];
-            arr[sp]= arr[ep];
-            arr[ep]= temp;
-
-            sp++;
-            ep--;
-
-        }
-
-    }
 
     
 
