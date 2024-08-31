@@ -20,7 +20,7 @@ public class array8_two_sum_brute {
         System.out.print("Enter value of k:");
         int k= scan.nextInt();
 
-        two_sum_brute(arr, k);
+        System.out.println(two_sum_brute(arr, k));
 
 
 
@@ -28,8 +28,8 @@ public class array8_two_sum_brute {
     }
     
     public static boolean two_sum_brute(int arr[], int k){
-        
-        
+
+
     }
 
 
@@ -38,3 +38,6 @@ public class array8_two_sum_brute {
 
 
 }
+
+//Logic
+//Checking possible pairs, avoid the same element and 
