@@ -49,7 +49,9 @@ public class array8_two_sum_brute {
 
 }
 
+//TC- O(n^2) , SC- O(1) 
 //Logic
 //Checking possible pairs, avoid the same elements
-//always draw all possible i,j pairs like (0,0),(0,1)...etc, neglect the same element and same pairs
+//always draw all possible i,j pairs like (0,0),(0,1)...etc, 
+//neglect the same element like (0,0) and same pairs like (1,0) and (0,1)-avoid one in this  
 //2 for loops are needed in which one is nested , check that if i+j==k and return true if yes else false
