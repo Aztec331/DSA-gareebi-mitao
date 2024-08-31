@@ -8,6 +8,7 @@ public class array8_two_sum_brute {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
+        System.out.print("Enter how many elements u want:");
         int n = scan.nextInt();
 
         int arr[] = new int[n];
@@ -29,6 +30,15 @@ public class array8_two_sum_brute {
     
     public static boolean two_sum_brute(int arr[], int k){
 
+        for(int i=0; i<=arr.length-2; i++){
+            for(int j=i+1; j<=arr.length-1; j++){
+                if(arr[i]+arr[j]==k){
+                    return true;
+                }
+            }
+        }
+
+        return false;
 
     }
 
@@ -40,4 +50,6 @@ public class array8_two_sum_brute {
 }
 
 //Logic
-//Checking possible pairs, avoid the same element and 
+//Checking possible pairs, avoid the same elements
+//always draw all possible i,j pairs like (0,0),(0,1)...etc, neglect the same element and same pairs
+//2 for loops are needed in which one is nested , check that if i+j==k and return true if yes else false

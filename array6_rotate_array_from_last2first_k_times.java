@@ -82,4 +82,5 @@ public class array6_rotate_array_from_last2first_k_times {
 
 // 6. **Illustrative Example**: For an array `{4,1,6,9}` with `k=9` and `n=4`, applying `k = 9 % 4` simplifies `k` to `1`. Thus, instead of performing 9 rotations, only 1 rotation is required—demonstrating the practical benefit of this optimization strategy for large `k` values.
 
+//7. Always remeber aztec rotating array is always linked to reversing array
 // This approach effectively minimizes computational effort and time complexity, making it a preferred method for rotating arrays, especially in scenarios where performance and efficiency are critical.
