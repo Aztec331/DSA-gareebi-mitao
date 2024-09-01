@@ -45,4 +45,5 @@ public class array9_max_difference1 {
     
 }
 
-//TC 
+//TC - O(N) & SC O(1)
+
