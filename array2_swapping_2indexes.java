@@ -32,19 +32,7 @@ public class array2_swapping_2indexes{
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
+
+
+

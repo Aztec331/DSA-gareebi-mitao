@@ -3,57 +3,29 @@ import java.util.*;
 import java.text.*;
 import java.math.*;
 import java.util.regex.*;
-
 public class rough {
     public static void main(String[] args) {
-        //i understood this game now and i'll beat this
-
-        Scanner scan = new Scanner(System.in);
-        System.out.print("Enter size of array:");
-        int n = scan.nextInt();
-
-        int arr[]= new int[n];
-
-        for(int i=0; i<n; i++){
-            System.out.print("Enter array elements:");
-            arr[i]= scan.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+        
+        if (isPrime(number)) {
+            System.out.println(number + " is a prime number.");
+        } else {
+            System.out.println(number + " is not a prime number.");
         }
-
-        System.out.println(count_greater(arr));
-
-        scan.close();
-
     }
 
-    public static int count_greater(int arr[]){
-
-        int max = Integer.MIN_VALUE;
-        int countmax= 0;
-
-        for(int i=0; i<arr.length; i++){
-            if(arr[i]>max){
-                max=arr[i];
-            }
-
+    public static boolean isPrime(int n) {
+        if (n <= 1) {
+            return false;
         }
-
-        for(int i=0; i<arr.length; i++){
-            if(arr[i]==max){
-                countmax++;
+        for (int i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i == 0) {
+                return false;
             }
         }
-
-        int worthy= arr.length-countmax;
-
-        return worthy;
-
-
+        return true;
     }
-
-
-
-
-    
-
-
 }
+

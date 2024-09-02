@@ -4,7 +4,7 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-public class array7_count_greater{
+public class array8_count_greater{
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
@@ -41,5 +41,7 @@ public class array7_count_greater{
 
     }
 }
+
+
 
 

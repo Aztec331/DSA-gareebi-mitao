@@ -4,7 +4,7 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-public class array6_rotate_array_from_last2first_k_times {
+public class array7_rotate_array_from_last2first_k_times {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
@@ -46,8 +46,6 @@ public class array6_rotate_array_from_last2first_k_times {
             sp++;
             ep--;
         }
-
-
     }
     
 }

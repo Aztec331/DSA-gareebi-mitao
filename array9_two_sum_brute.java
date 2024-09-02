@@ -4,7 +4,7 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-public class array8_two_sum_brute {
+public class array9_two_sum_brute {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
@@ -41,12 +41,6 @@ public class array8_two_sum_brute {
         return false;
 
     }
-
-
-
-
-
-
 }
 
 //TC- O(n^2) , SC- O(1) 
