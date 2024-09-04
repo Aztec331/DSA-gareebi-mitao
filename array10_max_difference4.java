@@ -24,6 +24,7 @@ public class array10_max_difference4 {
         int n= arr.length;
         int max= Integer.MIN_VALUE;
         int min= Integer.MAX_VALUE;
+        
 
         
 
