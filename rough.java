@@ -8,24 +8,20 @@ public class rough {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int number = scanner.nextInt();
-        
-        if (isPrime(number)) {
-            System.out.println(number + " is a prime number.");
-        } else {
-            System.out.println(number + " is not a prime number.");
-        }
-    }
+        int remainder = 0;
 
-    public static boolean isPrime(int n) {
-        if (n <= 1) {
-            return false;
+        for(int i=2; i<number;i++){
+            remainder= number%i;
         }
-        for (int i = 2; i <= Math.sqrt(n); i++) {
-            if (n % i == 0) {
-                return false;
-            }
+
+        if(remainder==0){
+            System.out.println("Not prime");
         }
-        return true;
+        else{
+            System.out.println("Prime");
+        }
+
+
     }
 }
 
