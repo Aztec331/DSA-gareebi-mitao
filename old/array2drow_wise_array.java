@@ -4,7 +4,7 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-public class row_wise_array {
+public class array2drow_wise_array {
     public static void main(String[] args){
     
     Scanner scan = new Scanner(System.in);
