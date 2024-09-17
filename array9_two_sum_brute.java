@@ -23,9 +23,6 @@ public class array9_two_sum_brute {
 
         System.out.println(two_sum_brute(arr, k));
 
-
-
-
     }
     
     public static boolean two_sum_brute(int arr[], int k){
