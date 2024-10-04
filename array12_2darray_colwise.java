@@ -8,6 +8,7 @@ public class array12_2darray_colwise {
     public static void main(String[] args) {
 
         //everything we're doing for is for money
+        //ofc behenchod
         Scanner scan = new Scanner(System.in);
 
         int n=scan.nextInt();
@@ -22,8 +23,8 @@ public class array12_2darray_colwise {
             }
         }
         
-        for(int i=0; i<arr.length; i++){
-            for(int j=0; j<arr[0].length; j++){
+        for(int j=0; j<arr[0].length; j++){
+            for(int i=0; i<arr.length; i++){
                 System.out.print(arr[i][j]+ " ");
             }
             System.out.println();

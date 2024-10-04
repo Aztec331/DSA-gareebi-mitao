@@ -8,8 +8,8 @@ public class array11_2darray_rowwise{
         int m = scan.nextInt();
         int arr[][]= new int[n][m];
 
-        //here arr[0].length means row zero's (which is the first row's ) length
-        //which will give us how many columns it has
+        //no of rows ->> arr.length== n , arr.length gives length of the row
+        //no of columns ->> arr[0].length==m, arr[0] gives length of column
         for(int i=0; i<arr.length; i++){
             for(int j=0; j<arr[0].length; j++){
                 arr[i][j]= scan.nextInt();
@@ -19,12 +19,19 @@ public class array11_2darray_rowwise{
         System.out.println();
         
         //for printing the elements
-        for(int i=0; i<arr[0].length; i++){
-            for(int j=0; j<arr.length; j++){
+        for(int i=0; i<arr.length; i++){
+            for(int j=0; j<arr[0].length; j++){
                 System.out.print(arr[i][j]+ " ");
             }
             System.out.println();
         }
+
+        System.out.println();
+
+        System.out.println(arr[0].length);
+        System.out.println(arr[1].length);
+        System.out.println(arr[2].length);
+        System.out.println(arr.length);
 
         scan.close();
 

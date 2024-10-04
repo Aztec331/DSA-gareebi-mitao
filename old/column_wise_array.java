@@ -29,6 +29,7 @@ public class column_wise_array {
     }
 
     scan.close();
+    
     }
     
 }
