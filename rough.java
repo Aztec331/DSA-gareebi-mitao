@@ -4,27 +4,23 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-public class rough{
+public class rough {
     public static void main(String[] args) {
+        int rows = 5;
 
-        Scanner scan = new Scanner(System.in);
-        int n= scan.nextInt();
-        int m= scan.nextInt();
-
-        int arr[][]= new int[n][m];
-
-        for(int i=0; i<arr[0].length; i++){
-            for(int j=0; j<arr.length; j++){
-                arr[i][j]= scan.nextInt();
+        for (int i = 1; i <= rows; i++) {
+            // Print spaces before stars
+            for (int j = 1; j <= rows - i; j++) {
+                System.out.print(" ");
             }
-        }
 
-        for(int i=0; i<arr[0].length; i++){
-            for(int j=0; j<arr.length; j++){
-                System.out.print(arr[i][j]+ " ");
+            // Print stars
+            for (int k = 1; k <= 2 * i - 1; k++) {
+                System.out.print("*");
             }
+
+            // Move to the next line
             System.out.println();
         }
-
     }
 }
